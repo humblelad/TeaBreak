@@ -101,7 +101,7 @@ public class ConfigUI extends JPanel {
     }
 
     private void showPopup() {
-        JDialog d = new JDialog(new JFrame() , "Break Time", true);
+        JDialog d = new JDialog(new JFrame() , "TEA BREAK", true);
         d.setLayout(new MigLayout());
         JButton b = new JButton ("OK");
         b.addActionListener (e -> {
@@ -119,7 +119,7 @@ public class ConfigUI extends JPanel {
                 resetUI();
             }
         });
-        d.add(new JLabel("Take a break from work now"), "span, wrap");
+        d.add(new JLabel("Health is wealth. Take a break from work now!"), "span, wrap");
         d.add(b, "al center");
         d.pack();
         d.setLocationRelativeTo(null);

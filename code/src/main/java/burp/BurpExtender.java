@@ -13,7 +13,7 @@ public class BurpExtender implements IBurpExtender, ITab, IExtensionStateListene
         this.callbacks = callbacks;
         this.callbacks.issueAlert("Tea break Extension Loaded Successfully.");
         String timer = this.callbacks.loadExtensionSetting(LAST_TIME_KEY);
-        SwingUtilities.invokeLater(() -> callbacks.setExtensionName("Tea Break Extension"));
+        SwingUtilities.invokeLater(() -> callbacks.setExtensionName("Tea Break"));
         configUI = new ConfigUI(timer, this);
         callbacks.addSuiteTab(this);
     }
